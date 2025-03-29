@@ -1,0 +1,221 @@
+/* General Styles */
+
+
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+/* Forms */
+.form {
+    display: none;
+}
+
+.login-form {
+    display: block;
+}
+
+#toggle-form {
+    display: none;
+}
+
+/* Toggle between Login and Register */
+#toggle-form:checked ~ .login-form {
+    display: none;
+}
+
+#toggle-form:checked ~ .register-form {
+    display: block;
+}
+
+h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+p {
+    margin-top: 10px;
+}
+
+label[for="toggle-form"] {
+    color: lightblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+label[for="toggle-form"]:hover {
+    text-decoration: underline;
+}
+
+
+/* Header */
+header {
+    background: #ff4500;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Movie Container */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #1c1c1c;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    width: 250px;
+    text-align: left;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+
+/* Styling for Category Titles */
+h2 {
+    text-align: center;
+    color: #ff4500;
+    margin-top: 30px;
+}
+/* Login Page Styles */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rating {
+    font-size: 20px;
+    color: gold;
+    margin-top: 5px;
+}
+.logout-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+}
